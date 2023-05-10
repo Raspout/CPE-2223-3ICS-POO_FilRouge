@@ -16,7 +16,10 @@ public class PieceGui extends ImageView implements CheckersPieceGui {
 	private PieceSquareColor color;
 
 	public PieceGui(Image image, PieceSquareColor color) {
-		// ToDo Atelier 2
+		super();
+		//this.image = ;
+		this.color = color;
+
 
 	}
 

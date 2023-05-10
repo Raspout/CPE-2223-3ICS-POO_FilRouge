@@ -21,13 +21,33 @@ import nutsAndBolts.PieceSquareColor;
  *
  */
 class SquareGui extends BorderPane implements CheckersSquareGui {
-	
-	private PieceSquareColor squareColor;    		// le carré est Noir ou Blanc
+
+	private PieceSquareColor squareColor;            // le carré est Noir ou Blanc
 
 	public SquareGui (PieceSquareColor squareColor) {
-		// ToDo Atelier 2
+		super();
+		this.squareColor = squareColor;
+
+		Color color;
+		if ( PieceSquareColor.BLACK.equals(this.squareColor)) {
+			color = GuiConfig.CASEBLACK;
+		}
+		else{
+			color = GuiConfig.CASEWHITE;
+		}
+		this.setBackground(
+				new Background(
+						new BackgroundFill(color, CornerRadii.EMPTY, Insets.EMPTY)
+				)
+		);
+		this.setBorder(
+				new Border(
+						new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, BorderWidths.DEFAULT
+						)
+				)
+		);
 	}
-	
+
 	/**
 	 *Retourne l'indice du carré sur la grille (N° de 0 à 99)
 	 */
