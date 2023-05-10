@@ -17,9 +17,8 @@ public class PieceGui extends ImageView implements CheckersPieceGui {
 
 	public PieceGui(Image image, PieceSquareColor color) {
 		super();
-		//this.image = ;
+		this.setImage(image);
 		this.color = color;
-
 
 	}
 

@@ -14,7 +14,9 @@ import nutsAndBolts.PieceSquareColor;
  * La méthode hasSameColorAsGamer sera utilise en mode Client/server
  * pour empêcher un joueur de jouer une pièce qui ne lui appartient pas
  */
-public interface CheckersPieceGui {
+public interface
+
+CheckersPieceGui {
 	
 	public void promote(Image image);
 
